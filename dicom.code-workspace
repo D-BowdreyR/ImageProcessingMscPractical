@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "files"
+		},
+		{
+			"path": "images"
+		},
+		{
+			"path": ".",
+			"name": "dicom"
+		}
+	]
+}
