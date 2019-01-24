@@ -12,14 +12,27 @@ plt.show()
 
 #function to dispay the image at different window
 #levels
-def windowLevel(image,level,window,colormap):
+def windowLevel(image,levelwindow,colormap):
+    level, window =  levelwindow
     vmx = level + (window/2.0)
     vmi = level - (window/2.0)
     plt.imshow(image,cmap=colormap,vmin=vmi,vmax=vmx)
     plt.show()
 
 
-windowLevel(ct_image,500,200,"Greys_r")
+#windowLevel(ct_image,(50,100),"Greys_r")
+
+ct_image_bone = (125,100)
+ct_image_air = (25,50)
+
+windowLevel(ct_image,ct_image_bone,"Greys_r")
+windowLevel(ct_image,ct_image_air,"Greys_r")
+
+
+
+
+
+
 
 
 
