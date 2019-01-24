@@ -2,9 +2,10 @@
 
 import pydicom
 
-FILENAME = "/Users/daniel/coding-workspace/dicom/images/00004-MR-t2_pep_apl_orn/00001.dcm"
+print(dir(pydicom))
 
-dcm = pydicom.read_file(FILENAME)
-print(dcm.PatientName)
+#FILENAME = "/Users/daniel/coding-workspace/dicom/images/00004-MR-t2_pep_apl_orn/00001.dcm"
 
+#image_A = pydicom.read_file(FILENAME)
 
+#print(image_A.PatientName)
