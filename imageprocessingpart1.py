@@ -19,7 +19,6 @@ def windowLevel(image,levelwindow,colormap):
     plt.imshow(image,cmap=colormap,vmin=vmi,vmax=vmx)
     plt.show()
 
-
 #windowLevel(ct_image,(50,100),"Greys_r")
 
 ct_image_bone = (125,100)
@@ -27,6 +26,11 @@ ct_image_air = (25,50)
 
 windowLevel(ct_image,ct_image_bone,"Greys_r")
 windowLevel(ct_image,ct_image_air,"Greys_r")
+
+
+
+
+
 
 
 
