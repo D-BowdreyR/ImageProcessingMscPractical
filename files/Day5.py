@@ -9,7 +9,7 @@ from scipy import misc
 from scipy.ndimage import interpolation, rotate
 from scipy import optimize
 
-dcm_directory = "/Users/daniel/coding-workspace/dicom/images/dcm/"
+dcm_directory = "../images/dcm/"
 
 dcm_image1 = pydicom.read_file(dcm_directory+"IMG-0004-00001.dcm").pixel_array 
 dcm_image2 = pydicom.read_file(dcm_directory+"IMG-0004-00002.dcm").pixel_array 

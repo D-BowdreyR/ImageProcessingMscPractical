@@ -7,8 +7,9 @@ import matplotlib.pyplot as plt
 from scipy import misc
 from scipy.ndimage import interpolation, rotate
 
-lungs_image1 = misc.imread("/Users/daniel/coding-workspace/dicom/images/lungs.jpg",flatten=True)
-lungs_image2 = misc.imread("/Users/daniel/coding-workspace/dicom/images/lungs2.jpg",flatten=True)
+lungs_image1 = misc.imread("../images/lungs.jpg",flatten=True)
+lungs_image2 = misc.imread("../images/lungs2.jpg",flatten=True)
+
 
 #show each image on seperate plots
 plt.imshow(lungs_image1)
@@ -35,3 +36,4 @@ def shiftImages(list_xy_shifts):
 
 shiftImages([-25,-55])
 plt.show()
+
