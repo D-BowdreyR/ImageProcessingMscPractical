@@ -1,10 +1,10 @@
 #Day 5 creating automatic image registration
 #Daniel Bowdrey-Roberts
 
+from os import listdir
 import pydicom
 import numpy as np
 import matplotlib.pyplot as plt
-from os import listdir
 from scipy import misc
 from scipy.ndimage import interpolation, rotate
 from scipy import optimize
