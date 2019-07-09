@@ -29,8 +29,8 @@ ax.imshow(dcm_image1,alpha=0.5, cmap='Greens_r')
 #def cost functions
 def CstFuncSumSq(Image1, Image2):
     return np.mean((Image1 - Image2)**2)
-    
-# a function to shift the image given x and y coordinates 
+
+# a function to shift the image given x and y coordinates
 # and return cost
 def shiftwithcost(list_xy_shifts):
     global floating
