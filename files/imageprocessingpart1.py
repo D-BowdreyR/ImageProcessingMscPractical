@@ -4,9 +4,9 @@
 #import all libaries/functions required
 import numpy as np
 import matplotlib.pyplot as plt
-from scipy import misc
+import imageio
 
-ct_image = misc.imread("../images/CT.jpg", flatten=True)
+ct_image = imageio.imread("../images/CT.jpg", as_gray=True)
 plt.hist(ct_image.flatten(),bins=256, color='red')
 plt.show()
 
@@ -19,13 +19,14 @@ def windowLevel(image,levelwindow,colormap):
     plt.imshow(image,cmap=colormap,vmin=vmi,vmax=vmx)
     plt.show()
 
-#windowLevel(ct_image,(50,100),"Greys_r")
+windowLevel(ct_image,(50,100),"Greys_r")
 
 ct_image_bone = (125,100)
 ct_image_air = (25,50)
 
 windowLevel(ct_image,ct_image_bone,"Greys_r")
 windowLevel(ct_image,ct_image_air,"Greys_r")
+
 
 
 

@@ -10,5 +10,8 @@
 			"path": ".",
 			"name": "dicom"
 		}
-	]
+	],
+	"settings": {
+		"python.pythonPath": "/Users/dan/miniconda3/envs/imageprocessenv/bin/python"
+	}
 }
