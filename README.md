@@ -1,6 +1,6 @@
 # Image Processing in Python
 
-Code written for python practical I undertook during an MSc module "ICT in the Clinical Environment"
+Code I wrote during a python practical as part of an MSc module "ICT in the Clinical Environment"
 
 This includes some JN (Jupyter Notebook) Sessions to get warmed up using python and then a few image processing exercises.
 
