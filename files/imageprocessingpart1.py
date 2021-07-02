@@ -5,8 +5,11 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import imageio
+import os
 
-ct_image = imageio.imread("../images/CT.jpg", as_gray=True)
+currentDir = os.getcwd()
+
+ct_image = imageio.imread(currentDir+"/images/CT.jpg", as_gray=True)
 plt.hist(ct_image.flatten(),bins=256, color='red')
 plt.show()
 
