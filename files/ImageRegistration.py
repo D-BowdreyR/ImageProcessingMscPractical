@@ -28,7 +28,7 @@ dcm_image4.PhotometricInterpretation = 'YBR_FULL'
 fig1 = plt.figure(num='All Dicom Images')
 # plt.imshow(dcm_image1.pixel_array, cmap='Greens_r')
 # plt.imshow(dcm_image2.pixel_array, alpha=0.3, cmap='Reds_r')
-plt.imshow(dcm_image3.pixel_array, alpha=0.3, cmap='Blues_r')
+plt.imshow(dcm_image3.pixel_array, cmap='Blues_r')
 plt.imshow(dcm_image4.pixel_array, alpha=0.3, cmap='Purples_r')
 plt.show()
 
